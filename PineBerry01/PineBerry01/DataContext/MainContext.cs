@@ -17,6 +17,8 @@ namespace PineBerry01.DataContext
 
         public DbSet<User> Users { get; set; }
 
+        public DbSet<Calendar> Calendars { get; set; }
+
         //TODO: 나중에 SA에서 적절한 권한으로 바꾸기
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

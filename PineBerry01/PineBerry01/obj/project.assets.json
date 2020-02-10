@@ -5457,11 +5457,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\PineBerry1\\PineBerry01\\PineBerry01\\PineBerry01.csproj",
+      "projectUniqueName": "D:\\GitHub\\PineBerry1\\PineBerry1\\PineBerry01\\PineBerry01\\PineBerry01.csproj",
       "projectName": "PineBerry01",
-      "projectPath": "D:\\GitHub\\PineBerry1\\PineBerry01\\PineBerry01\\PineBerry01.csproj",
+      "projectPath": "D:\\GitHub\\PineBerry1\\PineBerry1\\PineBerry01\\PineBerry01\\PineBerry01.csproj",
       "packagesPath": "C:\\Users\\배재성\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\PineBerry1\\PineBerry01\\PineBerry01\\obj\\",
+      "outputPath": "D:\\GitHub\\PineBerry1\\PineBerry1\\PineBerry01\\PineBerry01\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\배재성\\AppData\\Roaming\\NuGet\\NuGet.Config",
