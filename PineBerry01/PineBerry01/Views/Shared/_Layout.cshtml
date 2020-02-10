@@ -8,27 +8,28 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PineBerry01</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <!--- 카테고리 --->
+    <div class="category">
+        <img src="https://i.ibb.co/1skjJKz/Pine-Berry-2x.png" alt="Pine-Berry-2x" class="logo" style="float:left;" border="0">
+        <div class="categorylist" style="float:left; margin:14px 0px 0px 158px;">Notice</div>
+        <div class="categorylist" style="float:left; margin:14px 0px 0px 30px;">Berries</div>
+        <div class="categorylist" style="float:left; margin:14px 0px 0px 30px">Calander</div>
+        <div class="categorylist" style="float:left; margin:14px 0px 0px 30px">Q&A</div>
+        <div class="categorylist" style="float:left; margin:14px 0px 0px 30px">More</div>
+    </div>
+    @*TODO: 여기에 Identity사용해서 뭐 하기*@
+    @if (true)
+    {
+        <!--- 관리자 카테고리--->
+        <div class="category2" style="position: relative; z-index: 2;">
+            <div class="categorylist2" style="float:left; margin:10px 0px 8px 55px;">공지추가</div>
+            <div class="categorylist2" style="float:left; margin:10px 0px 8px 65px;">일정추가</div>
+            <div class="categorylist2" style="float:left; margin:10px 0px 8px 65px;">Berry추가</div>
+            <div class="categorylist2" style="float:left; margin:10px 0px 8px 65px;">Berry제안관리</div>
+            <div class="categorylist2" style="float:left; margin:10px 0px 8px 65px;">Ban</div>
+            <div class="categorylist2" style="float:left; margin:10px 0px 8px 65px;">계정관리</div>
+        </div>
+    }
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
