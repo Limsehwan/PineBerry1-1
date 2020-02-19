@@ -1,0 +1,57 @@
+﻿@model IEnumerable<PineBerry01.Models.QnA>
+<head>
+    <link rel="stylesheet" href="~/css/QnA/Index.css" />
+</head>
+
+<!--- Q&A --->
+<div class="QA">Q&A</div>
+<div class="line"></div>
+<div class="choose" style="float:left;">
+    제목
+    <div class="arrowd" style="float:left;"></div>
+</div>
+<div class="write" style="float:left;"></div>
+<div class="search" style="float:left;">검색</div>
+
+<div class="linep" style="margin:60px 0px 0px 14px;"></div>
+<div class="cate" style="float:left; margin:13px 0px 0px 32px;">NO</div>
+<div class="cate" style="float:left; margin:13px 0px 0px 104px;">제목</div>
+<div class="cate" style="float:left; margin:13px 0px 0px 150px;">분류</div>
+<div class="cate" style="float:left; margin:13px 0px 0px 139px;">등록일시</div>
+<div class="cate" style="float:left; margin:13px 0px 0px 139px;">답변여부</div>
+<div class="linep" style="margin:40px 0px 0px 14px;"></div>
+
+@foreach (var list in Model)
+{
+    //example.com/QnA/QnADetail/1
+    <a asp-controller="QnA" asp-action="QnADetail" asp-route-id="@list.QnANo">
+        <div class="text" style="float:left; margin:11px 0px 0px 40px;">@Html.DisplayFor(modelItem => list.QnANo)</div>
+        <div class="text" style="float:left; margin:11px 0px 0px 60px;">@Html.DisplayFor(modelItem => list.QusetionTitle)</div>
+        <div class="text" style="float:left; margin:11px 0px 0px 125px;">@Html.DisplayFor(modelItem => list.QuestionDate)</div>
+        @if (list.AnswerTitle == null)
+        {
+            <div class="icon" style="float:left; margin:11px 0px 0px 150px;">X</div>
+        }
+        else
+        {
+            <div class="icon" style="float:left; margin:11px 0px 0px 150px;">O</div>
+        }
+        <div class="linelp" style=" margin:40px 0px 0px 14px;"></div>e
+    </a>
+}
+
+
+<div class="arrow" style="float:left; margin:31px 0px 0px 235px;"><<</div>
+<div class="arrow" style="float:left; margin:31px 0px 0px 15px;"><</div>
+<div class="arrow" style="float:left; margin:31px 0px 0px 15px;">1</div>
+<div class="arrow" style="float:left; margin:31px 0px 0px 15px;">2</div>
+<div class="arrow" style="float:left; margin:31px 0px 0px 15px;">3</div>
+<div class="arrow" style="float:left; margin:31px 0px 0px 15px;">4</div>
+<div class="arrow" style="float:left; margin:31px 0px 0px 15px;">5</div>
+<div class="arrow" style="float:left; margin:31px 0px 0px 15px;">6</div>
+<div class="arrow" style="float:left; margin:31px 0px 0px 15px;">7</div>
+<div class="arrow" style="float:left; margin:31px 0px 0px 15px;">></div>
+<div class="arrow" style="float:left; margin:31px 0px 0px 15px;">>></div>
+
+
+<div class="copyright" style="margin: 296px 0px 27px 246px;">2019 Copyright ⓒ Team VaryBerry All Right Reserved.</div>

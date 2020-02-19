@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\PineBerry1\\PineBerry1\\PineBerry01\\PineBerry01\\PineBerry01.csproj": {}
+    "C:\\Users\\user\\Desktop\\PineBerry01 - 복사본 (4)\\PineBerry01\\PineBerry01\\PineBerry01.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\PineBerry1\\PineBerry1\\PineBerry01\\PineBerry01\\PineBerry01.csproj": {
+    "C:\\Users\\user\\Desktop\\PineBerry01 - 복사본 (4)\\PineBerry01\\PineBerry01\\PineBerry01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\PineBerry1\\PineBerry1\\PineBerry01\\PineBerry01\\PineBerry01.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\PineBerry01 - 복사본 (4)\\PineBerry01\\PineBerry01\\PineBerry01.csproj",
         "projectName": "PineBerry01",
-        "projectPath": "D:\\GitHub\\PineBerry1\\PineBerry1\\PineBerry01\\PineBerry01\\PineBerry01.csproj",
-        "packagesPath": "C:\\Users\\배재성\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\PineBerry1\\PineBerry1\\PineBerry01\\PineBerry01\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\PineBerry01 - 복사본 (4)\\PineBerry01\\PineBerry01\\PineBerry01.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\PineBerry01 - 복사본 (4)\\PineBerry01\\PineBerry01\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\배재성\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -59,6 +64,14 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.1, )"
             }

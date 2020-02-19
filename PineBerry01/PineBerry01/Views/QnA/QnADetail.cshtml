@@ -1,0 +1,35 @@
+﻿@model PineBerry01.Models.QnA
+<head>
+    <link rel="stylesheet" href="~/css/QnA/QnADetail.css" />
+</head>
+
+<!--- Q&A --->
+<div class="QA">Q&A</div>
+<div class="line" style="margin:8px 0px 0px 356px;"></div>
+
+
+<div class="pinkline" style="margin:11px 0px 0px 54px;"></div>
+
+<div class="mark" style="margin:0px 0px 0px 662px;">답변<br>완료</div>
+
+<div class="sum">
+    <div class="q" style="float:left; margin:-20px 0px 0px 71px;">Q.</div>
+    <div class="qt" style="float:left; margin:-10px 0px 0px 13px;">@Html.DisplayFor(model => model.QusetionTitle)</div>
+    <div class="blackline" style="float:left; margin: 20px 0px 0px -125px"></div>
+    <div class="qtext" style="float:left; margin:35px 0px 0px -600px;">@Html.DisplayFor(model1 => model1.QuestionContent)</div>
+</div>
+<div class="boxp" style="margin:-40px 0px 0px 50px;"></div>
+
+<div class="sum">
+    <div class="q" style="float:left; margin:68px 0px 0px 71px;">A.</div>
+    <div class="qt" style="float:left; margin:73px 0px 0px 13px;">@Html.DisplayFor(model2 => model2.AnswerTitle)</div>
+    <div class="blackline" style="float:left; margin: 102px 0px 0px -110px"></div>
+    <div class="qtext" style="float:left; margin:120px 0px 0px -600px;">@Html.DisplayFor(model3 => model3.AnswerContext)</div>
+</div>
+<div class="boxy" style="margin:40px 0px 0px 50px;"></div>
+
+<img src="https://i.ibb.co/n77wnyj/returm.png" class="backimage" alt="returm"
+     style="position: relative; z-index: 2; margin:60px 0px 0px 675px; border:0px solid;">
+<div class="back" style="position: relative; margin:-28px 0px 0px 661px; "></div>
+
+<div class="copy" style="margin:248px 0px 20px 246px;">2019 Copyright ⓒ Team VaryBerry All Right Reserved.</div>

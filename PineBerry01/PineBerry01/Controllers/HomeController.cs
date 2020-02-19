@@ -9,7 +9,7 @@ using PineBerry01.Models;
 
 namespace PineBerry01.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : Microsoft.AspNetCore.Mvc.Controller
     {
         private readonly ILogger<HomeController> _logger;
 

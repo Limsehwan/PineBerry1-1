@@ -1,0 +1,142 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+* {
+    margin: 0;
+}
+
+.category {
+    height: 50px;
+    width: 768px;
+    border: 0px solid;
+    background: linear-gradient( to right, #FFFFFF, #FDEAEA)
+}
+
+.logo {
+    height: 44px;
+    width: 44px;
+    margin: 2px 0px 3px 12px;
+}
+
+.categorylist {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 1000;
+    font-size: 15px;
+}
+
+@font-face {
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumGothic';
+    url('images/NanumGothic.woff') format('woff'), url('images/NanumGothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.QA {
+    font-family: 'TmonMonsori';
+    src:;
+    font-size: 21px;
+    color: #FF637B;
+    margin: 36px 0px 0px 360px;
+}
+
+.line {
+    width: 53px;
+    height: 0px;
+    border: 2px solid #000000;
+}
+
+.date {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 9px;
+}
+
+.pinkline {
+    width: 682px;
+    height: 0px;
+    border: 3px solid #FFA6B4;
+}
+
+.mark {
+    width: 43px;
+    height: 54px;
+    box-sizing: content-box;
+    padding-top: 15px;
+    position: relative;
+    background: #802D39;
+    color: white;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12px;
+}
+
+    .mark:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 13px solid #F2C3BD;
+        border-left: 22px solid transparent;
+        border-right: 22px solid transparent;
+    }
+
+.q {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 25px;
+}
+
+.qt {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.blackline {
+    width: 620px;
+    height: 0px;
+    border: 1px solid #40292D;
+}
+
+.qtext {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.boxp {
+    width: 682px;
+    height: 200px;
+    background: #E8958B91;
+    border-radius: 24px;
+}
+
+.boxy {
+    width: 682px;
+    height: 200px;
+    background: #FFDBA1B5;
+    border-radius: 24px;
+}
+
+.back {
+    width: 49px;
+    height: 28px;
+    background: #FFA6B4;
+    border-radius: 8px;
+}
+
+.backimage {
+    border: 0px solid;
+}
+
+.copy {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 11px;
+}

@@ -1,0 +1,97 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+* {
+    margin: 0;
+}
+
+.category {
+    height: 50px;
+    width: 768px;
+    border: 0px solid;
+    background: linear-gradient( to right, #FFFFFF, #FDEAEA)
+}
+
+.logo {
+    height: 44px;
+    width: 44px;
+    margin: 2px 0px 3px 12px;
+}
+
+.categorylist {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 1000;
+    font-size: 15px;
+}
+
+@font-face {
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumGothic';
+    url('images/NanumGothic.woff') format('woff'), url('images/NanumGothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.aboutus {
+    font-family: 'TmonMonsori';
+    src:;
+    font-size: 25px;
+    color: #FF637B;
+}
+
+.pinkline {
+    width: 690px;
+    height: 0px;
+    border: 3px solid #FFA6B4;
+}
+
+.image {
+    width: 76px;
+    height: 76px;
+}
+
+.text {
+    font-family: 'NanumGothic';
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.sum:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.beta {
+    font-family: 'Yesteryear', cursive;
+    font-size: 45px;
+    color: #FF637B;
+}
+
+.job {
+    font-family: 'NanumGothic';
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.name {
+    font-family: 'NanumGothic';
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.copy {
+    font-family: 'NanumGothic';
+    font-size: 11px;
+}
+
+.pinkbox {
+    width: 768px;
+    height: 1829px;
+    background-color: #FDEAEA;
+}

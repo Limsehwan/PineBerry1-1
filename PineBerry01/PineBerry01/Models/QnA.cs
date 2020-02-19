@@ -7,23 +7,20 @@ namespace PineBerry01.Models
     public class QnA
     {
         [Key]
-        public int QnANo { get; set; }
+        public int QnANo { get; set; } //질문 번호
 
         [Required]
-        public string QusetionTitle { get; set; }
+        public string QusetionTitle { get; set; } //질문 제목
 
         [Required]
-        public string QuestionContent { get; set; }
+        public string QuestionContent { get; set; }  //질문 상세 내용
 
         [Required]
-        public DateTime QuestionDate { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime QuestionDate { get; set; }  //질문한 날짜         
 
-        [Required]
-        public int QnASubbjectName { get; set; }
+        public string AnswerTitle { get; set; }
 
-        [ForeignKey("QnASubbjectName")]
-        public virtual QnASubject QnASubject { get; set; }
-
-        public string AnswerContent { get; set; }
+        public string AnswerContext { get; set; }
     }
 }

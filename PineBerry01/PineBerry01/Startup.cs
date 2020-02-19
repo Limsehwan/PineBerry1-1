@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PineBerry01.DataContext;
+using Microsoft.EntityFrameworkCore;
 
 namespace PineBerry01
 {
@@ -24,6 +26,9 @@ namespace PineBerry01
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<MainContext>(options =>
+           options.UseSqlServer(Configuration.GetConnectionString("TestingContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,7 +55,7 @@ namespace PineBerry01
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=QnA}/{action=Index}/{id?}");
             });
         }
     }

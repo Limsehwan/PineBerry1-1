@@ -5,24 +5,24 @@ namespace PineBerry01.DataContext
 {
     public class MainContext : DbContext
     {
-        public DbSet<Berry> Berries { get; set; }
+        public DbSet<Berries> Berries { get; set; }
 
         public DbSet<BerrySubject> BerrySubjects { get; set; }
 
-        public DbSet<BerrySuggest> BerrySuggests { get; set; }
-
         public DbSet<Notice> Notices { get; set; }
-
-        public DbSet<QnASubject> QnASubjects { get; set; }
-
-        public DbSet<User> Users { get; set; }
 
         public DbSet<Calendar> Calendars { get; set; }
 
-        //TODO: 나중에 SA에서 적절한 권한으로 바꾸기
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public DbSet<QnA> QnAs { get; set; }
+
+        public MainContext(DbContextOptions<MainContext> options)
+            : base(options)
         {
-            optionsBuilder.UseSqlServer(@"Server=localhost;Database=PineBerry;User Id=sa;Password=martin03110170@;");
         }
+
+        public MainContext()
+        { }
+
+
     }
 }

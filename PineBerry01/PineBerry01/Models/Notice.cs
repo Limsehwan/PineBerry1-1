@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -9,12 +9,12 @@ namespace PineBerry01.Models
     public class Notice
     {
         [Key]
-        public int NoticeNo { get; set; }
+        public int NoticeNo { get; set; }  //게시글 번호 
 
         [Required]
-        public string NoticeTitle { get; set; }
+        public string NoticeTitle { get; set; }  //게시글 제목
 
         [Required]
-        public string NoticeContent { get; set; }
+        public string NoticeContent { get; set; }  //게시글 상세 내용
     }
 }

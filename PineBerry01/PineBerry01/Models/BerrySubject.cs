@@ -9,6 +9,6 @@ namespace PineBerry01.Models
     public class BerrySubject
     {
         [Key]
-        public string BerrySubjectName { get; set; }
+        public string BerrySubjectName { get; set; } 
     }
 }
